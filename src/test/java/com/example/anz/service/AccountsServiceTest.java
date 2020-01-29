@@ -68,6 +68,7 @@ public class AccountsServiceTest {
 		assertFalse(accountsEntityList.isEmpty());
 		newAccountsDTO=AccountsDTO.valueOf(accountsEntityList.get(0));
 		assertEquals("ANZTestUser1", newAccountsDTO.getAccountName());
+		assertFalse(accountServiceMock.getAllAccounts().isEmpty());
 	}
 	
 	
